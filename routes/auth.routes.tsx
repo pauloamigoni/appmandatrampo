@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
+import Servicos from '../pages/Servicos';
 
 const Auth = createStackNavigator();
 
@@ -13,6 +14,8 @@ const AuthRoutes: React.FC = () => (
             cardStyle: { backgroundColor: '#312e38' },
         }}
     >
+
+        <Auth.Screen name="Servicos" component={Servicos} />
         <Auth.Screen name="SignIn" component={SignIn} />
         <Auth.Screen name="SignUp" component={SignUp} />
     </Auth.Navigator>

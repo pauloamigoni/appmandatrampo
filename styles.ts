@@ -51,6 +51,22 @@ export const UserAvatar = styled.Image`
     border-radius: 18px;
 `;
 
+export const ImageHome = styled.Image`
+   display: flex;
+   margin-top:20px;
+  
+`;
+export const TextHome = styled.Text`
+    color: #666;
+    font-size: 18px;
+    /* font-family: 'RobotoSlab-Regular'; */
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+`;
+
+
+
 export const ServicesList = styled(FlatList as new () => FlatList<Service>)`
     padding: 15px 24px 16px;
 `;
@@ -64,12 +80,14 @@ export const ServiceListName = styled.Text`
 `;
 
 export const ServiceContainer = styled(RectButton)`
-    background: #DCDCDC;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 16px;
+   
+    padding: 5px 0px 0px 5px;
     flex-direction: row;
     align-items: center;
+    margin: 5px 20px 0px 20px;
+    background: #E1DBDB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 `;
 
 export const ServiceAvatar = styled.Image`
@@ -78,10 +96,28 @@ export const ServiceAvatar = styled.Image`
     border-radius: 6px;
 `;
 
+export const ImgJuntos = styled.Image`
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+`;
+
+
+
+
 export const ServiceInfo = styled.View`
     flex: 1;
     margin-left: 20px;
 `;
+
+
+export const Acessos = styled.View`
+    flex: 1;
+    margin: 0 auto;
+`;
+
+
+
 
 export const ServiceName = styled.Text`
     /* font-family: 'RobotoSlab-Medium'; */

@@ -1,10 +1,14 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 //import { useNavigation } from '@react-navigation/native';
+import { Col, Row, Grid } from "react-native-easy-grid";
 import { StyleSheet, Text, View } from 'react-native';
-import logoImg from './assets/manda.png';
+
+import logoImg from './assets/mandahome.png';
+import ImgJunto from './assets/juntos.gif';
 
 import Tabbar from './src/components/Tabbar';
+//import Button from './src/components/Button';
 
  import api from './services/api';
 
@@ -16,6 +20,8 @@ import Tabbar from './src/components/Tabbar';
   UserName,
   ProfileButton,
   UserAvatar,
+  ImageHome,
+  TextHome,
   ServicesList,
   ServiceListName,
   ServiceContainer,
@@ -24,6 +30,8 @@ import Tabbar from './src/components/Tabbar';
   ServiceName,
   ServiceMeta,
   ServiceMetaText,
+  Acessos,
+  ImgJuntos,
 } from './styles';
 
 
@@ -47,8 +55,11 @@ const styles = StyleSheet.create({
 });
 
 
-
+ 
 const Dashboard: React.FC = () => {
+
+  
+
    const [services, setServices] = useState<Service[]>([]);
  
   useEffect(() => {
@@ -65,6 +76,8 @@ const Dashboard: React.FC = () => {
 
     <View style={styles.container}>
 
+
+
 <Container>
     <Header>
         <HeaderTitle>
@@ -74,6 +87,7 @@ const Dashboard: React.FC = () => {
         </HeaderTitle>
               
                     <UserAvatar source={logoImg} />
+                  
               
     </Header>
 
@@ -82,59 +96,39 @@ const Dashboard: React.FC = () => {
                 precisa .
             </ServiceBannerText>
 
-            <ServicesList
-                data={services}
-                keyExtractor={(service) => service.id}
-                ListHeaderComponent={
-                    <ServiceListName>
-                        Serviços <Icon name="heart" size={28} color="#6C63FF" />{' '}
-                        Curriculum
-                    </ServiceListName>
-                }
-                renderItem={({ item: service }) => (
-                  <ServiceContainer onPress={() => {}}>
-                      <ServiceAvatar source={logoImg} />
-                      <ServiceInfo>
-                          <ServiceName>{service.name}</ServiceName>
-                          <ServiceMeta>
-                              <Icon name="info" size={14} color="#6C63FF" />
-                              <ServiceMetaText>
-                                  {service.description}
-                                  {'\n'}
-                              </ServiceMetaText>
-                          </ServiceMeta>
-                      
-                          <View
-                              style={{
-                                borderBottomColor: '#fff',
-                                borderBottomWidth: 1,
-                              }}
-                            />
-                      
-                          <ServiceMeta>
-                              <Icon name="phone" size={14} color="#6C63FF" />
-                              <ServiceMetaText>
-                                  {service.celphone}
-                              </ServiceMetaText>
-                          </ServiceMeta>
+          
+   
+             <Acessos>
+                  <ServiceContainer>
+                    <TextHome>
+                     Devido a pandemia estabelecida ao redor do nosso planeta,
+                     a turma de Sistemas para Internet está desenvolvendo um 
+                     jeitinho para ajudar quem está precisando, 
+                     nesse momento dificil ou não.
+                    </TextHome>
 
-                          <ServiceMeta>
-                              <Icon name="mail" size={14} color="#6C63FF" />
-                              <ServiceMetaText>
-                                  {service.email}
-                              </ServiceMetaText>
-                          </ServiceMeta>
-
-                          <ServiceMeta>
-                              <Icon name="home" size={14} color="#6C63FF" />
-                              <ServiceMetaText>
-                                  {service.city} - {service.state}
-                              </ServiceMetaText>
-                          </ServiceMeta>
-                      </ServiceInfo>
+            
                   </ServiceContainer>
-              )}
-            />
+              </Acessos>
+
+         
+     
+            
+              <Grid>
+    <Col>
+        <Text>
+        <ImgJuntos source={ImgJunto} />
+</Text>
+    </Col>
+    <Col>
+        <Text>   <TextHome>
+                     Devido a pandemia estabelecida ao redor do nosso planeta,
+                     a turma de Sistemas para Internet está desenvolvendo um 
+                     jeitinho para ajudar quem está precisando, 
+                     nesse momento dificil ou não.
+                    </TextHome></Text>
+    </Col>
+</Grid>
 
     </Container>
 
