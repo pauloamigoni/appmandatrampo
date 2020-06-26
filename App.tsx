@@ -4,8 +4,10 @@ import Icon from 'react-native-vector-icons/Feather';
 import { Col, Row, Grid } from "react-native-easy-grid";
 import { StyleSheet, Text, View } from 'react-native';
 
-import logoImg from './assets/mandahome.png';
+import logoImg from './assets/manda.png';
 import ImgJunto from './assets/juntos.gif';
+import Mochila from './assets/mochila.png';
+import Mochila2 from './assets/mochila2.png';
 
 import Tabbar from './src/components/Tabbar';
 //import Button from './src/components/Button';
@@ -23,6 +25,8 @@ import Tabbar from './src/components/Tabbar';
   ImageHome,
   TextHome,
   ServicesList,
+  ListServico,
+  TextServico,
   ServiceListName,
   ServiceContainer,
   ServiceAvatar,
@@ -32,6 +36,21 @@ import Tabbar from './src/components/Tabbar';
   ServiceMetaText,
   Acessos,
   ImgJuntos,
+  Servico,
+  ImgServico,
+  ImgService,
+  Mtexto,
+  Cv,
+  ImgCv,
+  ListCv,
+  TextCv,
+  Union,
+  Subtract,
+  Subtract2,
+  Subtract3,
+  Rectangle,
+  Rectangle4,
+  Rectangle5,
 } from './styles';
 
 
@@ -73,67 +92,38 @@ const Dashboard: React.FC = () => {
   return (
 
 
-
     <View style={styles.container}>
 
-
-
-<Container>
-    <Header>
-        <HeaderTitle>
-            <UserName>MANDATRAMPO </UserName>
-            <Icon name="heart" size={18} color="#6C63FF" />
-    
-        </HeaderTitle>
-              
-                    <UserAvatar source={logoImg} />
-                  
-              
-    </Header>
-
-    <ServiceBannerText>
+         
+      <Union>
+{/* 
+      <ServiceBannerText>
                 Busque currículos e serviços manda um trampo pra alguém que
                 precisa .
-            </ServiceBannerText>
+            </ServiceBannerText> */}
 
-          
-   
-             <Acessos>
-                  <ServiceContainer>
-                    <TextHome>
-                     Devido a pandemia estabelecida ao redor do nosso planeta,
-                     a turma de Sistemas para Internet está desenvolvendo um 
-                     jeitinho para ajudar quem está precisando, 
-                     nesse momento dificil ou não.
-                    </TextHome>
-
-            
-                  </ServiceContainer>
-              </Acessos>
-
-         
+      <ImgCv  source={Mochila2} />
+      <Subtract2/>
+      <Subtract3/>
+         <Subtract>
+          <Rectangle4></Rectangle4>
+          <Rectangle5></Rectangle5>
      
-            
-              <Grid>
-    <Col>
-        <Text>
-        <ImgJuntos source={ImgJunto} />
-</Text>
-    </Col>
-    <Col>
-        <Text>   <TextHome>
-                     Devido a pandemia estabelecida ao redor do nosso planeta,
-                     a turma de Sistemas para Internet está desenvolvendo um 
-                     jeitinho para ajudar quem está precisando, 
-                     nesse momento dificil ou não.
-                    </TextHome></Text>
-    </Col>
-</Grid>
+          <Rectangle/>
+     
+        </Subtract>
 
-    </Container>
+        <ImgService  source={Mochila} />
 
-       <Tabbar />
+        <Mtexto>MANDATRAMPO</Mtexto>
+
+        
+        </Union>
+
+        <Tabbar />
     </View>
+  
+
 
       
   );
