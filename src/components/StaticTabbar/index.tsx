@@ -24,7 +24,7 @@ export default class StaticTabbar extends Component<Props> {
     Animated.sequence([
       ...this.values.map(value => Animated.timing(value, {
         toValue: 0,
-        duration: 50,
+        duration: 30,
         useNativeDriver: true,
       })),
 
@@ -86,10 +86,11 @@ export default class StaticTabbar extends Component<Props> {
                     height: tabHeight,
                     justifyContent: 'center',
                     alignItems: 'center',
+                    color: '#eee',
                     transform: [{ translateY }]
                   }}>
                   <View style={styles.circle}>
-                    <Icon size={25} {...{ name }} />
+                    <Icon size={25} {...{ name }} style={{color: '#eee'}} />
                   </View>
                 </Animated.View>
               </React.Fragment>
@@ -102,7 +103,11 @@ export default class StaticTabbar extends Component<Props> {
 }
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    color: '#eee',
+   
+    
+    
   },
   tab: {
     flex: 1,
@@ -114,7 +119,8 @@ const styles = StyleSheet.create({
     width: 45,
     height: 45,
     borderRadius: 25,
-    backgroundColor: '#6C63FF',
+    backgroundColor: '#8B008B',
+    color: '#eee',
     justifyContent: 'center',
     alignItems: 'center',
   }

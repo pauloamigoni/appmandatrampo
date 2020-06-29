@@ -74,6 +74,7 @@ export default class Tabbar extends Component<Props> {
 
 const styles = StyleSheet.create({
   safeArea: {
-    backgroundColor: '#eee'
+    backgroundColor: '#eee',
+    
   },
 })
