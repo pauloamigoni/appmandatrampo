@@ -10,6 +10,7 @@ export const Container = styled.View`
     background: #dddbd1;
 `;
 
+<<<<<<< HEAD
 // export const Header = styled.View`
 //     padding: 18px;
 //     padding-top: ${getStatusBarHeight() + 1}px;
@@ -40,25 +41,48 @@ export const ImageHome = styled.Image`
 
 
 
+=======
+export const Header = styled.View`
+    padding: 18px;
+    padding-top: ${getStatusBarHeight() + 1}px;
+    background: #eee;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 export const ServiceBannerText = styled.Text`
     color: #eee;
     background-color: #655;
     padding: 5px;
     font-size: 16px;
+<<<<<<< HEAD
     /* font-family: 'RobotoSlab-Regular'; */
+=======
+    font-family: 'RobotoSlab-Regular';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
     text-align: center;
 `;
 
 export const HeaderTitle = styled.Text`
     color: #666;
     font-size: 20px;
+<<<<<<< HEAD
     /* font-family: 'RobotoSlab-Regular'; */
+=======
+    font-family: 'RobotoSlab-Regular';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
     line-height: 28px;
 `;
 
 export const UserName = styled.Text`
     color: #6c63ff;
+<<<<<<< HEAD
     /* font-family: 'RobotoSlab-Medium'; */
+=======
+    font-family: 'RobotoSlab-Medium';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 `;
 
 export const ProfileButton = styled.TouchableOpacity``;
@@ -77,7 +101,11 @@ export const ServiceListName = styled.Text`
     font-size: 24px;
     margin-bottom: 16px;
     color: #6c63ff;
+<<<<<<< HEAD
     /* font-family: 'RobotoSlab-Medium'; */
+=======
+    font-family: 'RobotoSlab-Medium';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
     text-align: center;
 `;
 
@@ -102,7 +130,11 @@ export const ServiceInfo = styled.View`
 `;
 
 export const ServiceName = styled.Text`
+<<<<<<< HEAD
     /* font-family: 'RobotoSlab-Medium'; */
+=======
+    font-family: 'RobotoSlab-Medium';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
     font-size: 14px;
     color: #000;
 `;
@@ -117,5 +149,9 @@ export const ServiceMetaText = styled.Text`
     margin-left: 8px;
     font-size: 12px;
     color: #666;
+<<<<<<< HEAD
     /* font-family: 'RobotoSlab-Regular'; */
+=======
+    font-family: 'RobotoSlab-Regular';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 `;

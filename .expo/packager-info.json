@@ -2,9 +2,16 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
+<<<<<<< HEAD
   "packagerPid": 12487,
   "expoServerNgrokUrl": null,
   "packagerNgrokUrl": null,
   "ngrokPid": null,
+=======
+  "packagerPid": 27192,
+  "expoServerNgrokUrl": "https://nd-u68.anonymous.appmandatrampo.exp.direct",
+  "packagerNgrokUrl": "https://packager.nd-u68.anonymous.appmandatrampo.exp.direct",
+  "ngrokPid": 27216,
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
   "webpackServerPort": null
 }

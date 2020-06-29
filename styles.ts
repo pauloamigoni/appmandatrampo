@@ -23,6 +23,12 @@ export const Servico = styled.View`
   height: 124px;
   left: 0px;
   top: 0px;
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 `;
 
 
@@ -41,6 +47,7 @@ export const ListServico = styled.View`
 `;
 
 
+<<<<<<< HEAD
 
 
 
@@ -102,11 +109,138 @@ export const Union = styled.View`
     left: 0px;
     top: 0px;
     background: #eee;
+=======
+export const TextServico = styled.Text`
+    position: absolute;
+    width: 196px;
+    height: 48px;
+    left: 76px;
+    top: 8px;
+
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+
+    color: #fff;
+   
+`;
+
+
+export const ImgServico = styled.Image`
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: -35px;
+  top: -25px;
+
+  border-top-right-radius: 50px;   
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;   
+  border-bottom-left-radius: 50px;
+
+`;
+
+
+
+export const Cv = styled.View`
+  position: absolute;
+  width: 380px;
+  height: 124px;
+  left: 0px;
+  top: 0px;
+`;
+
+
+export const ListCv = styled.View`
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 0px;
+    top: 430px;
+    background: #999;
+    border-top-right-radius: 50px;   
+    border-bottom-right-radius: 50px;
+   
+`;
+
+
+
+export const Mtexto = styled.Text`
+    
+    left: 0px;
+    top: 300px;
+    font-size: 38px;
+    color: #6C63FF;
+    text-align: center;
+    font-family: 'Roboto';
+    
+`;
+
+export const TextCv = styled.Text`
+    position: absolute;
+    width: 196px;
+    height: 48px;
+    left: 46px;
+    top: 8px;
+
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+
+    color: #eee;
+   
+`;
+
+
+export const ImgCv = styled.Image`
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  left: 50px;
+  top: 50px;
+ 
+  border-top-right-radius: 135px;   
+  border-bottom-right-radius: 135px;
+  border-top-left-radius: 135px;   
+  border-bottom-left-radius: 135px; 
+`;
+
+
+export const ImgService = styled.Image`
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  left: 50px;
+  top: 370px;
+ 
+  border-top-right-radius: 135px;   
+  border-bottom-right-radius: 135px;
+  border-top-left-radius: 135px;   
+  border-bottom-left-radius: 135px; 
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 `;
 
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 export const Header = styled.View`
     width: 100%;
     height: 110px;
@@ -213,6 +347,7 @@ export const UserAvatar = styled.Image`
     border-radius: 18px;
 `;
 
+<<<<<<< HEAD
 
 export const TextHome = styled.Text`
     color: #666;
@@ -226,6 +361,46 @@ export const TextHome = styled.Text`
     border-radius: 18px;
 
     
+=======
+export const ImageHome = styled.Image`
+   display: flex;
+   margin-top:20px;
+  
+`;
+export const TextHome = styled.Text`
+    color: #666;
+    font-size: 18px;
+    /* font-family: 'RobotoSlab-Regular'; */
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+`;
+
+
+
+export const ServicesList = styled(FlatList as new () => FlatList<Service>)`
+    padding: 15px 24px 16px;
+`;
+
+export const ServiceListName = styled.Text`
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #6c63ff;
+    /* font-family: 'RobotoSlab-Medium'; */
+
+    text-align: center;
+`;
+
+export const ServiceContainer = styled(RectButton)`
+   
+    padding: 5px 0px 0px 5px;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 20px 0px 20px;
+    background: #E1DBDB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 `;
 
 export const TextFatec = styled.Text`
@@ -237,6 +412,14 @@ export const TextFatec = styled.Text`
     transform: rotate(90deg);
 `;
 
+<<<<<<< HEAD
+=======
+export const ImgJuntos = styled.Image`
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+`;
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 
 
 
@@ -279,6 +462,21 @@ export const ServiceMetaText = styled.Text`
 
 
 
+<<<<<<< HEAD
+=======
+export const Union = styled.View`
+
+position: absolute;
+width: 375px;
+height: 326px;
+left: 0px;
+top: 0px;
+
+background: #eee;
+
+`;
+
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 
 export const Subtract = styled.View`
 
@@ -286,7 +484,11 @@ position: absolute;
 width: 80px;
 height: 80px;
 left: 0px;
+<<<<<<< HEAD
 top: 376px;
+=======
+top: 246px;
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 background: #eee;
 border-bottom-left-radius: 150px; 
 `;
@@ -298,7 +500,11 @@ position: absolute;
 width: 80px;
 height: 80px;
 left: 0px;
+<<<<<<< HEAD
 top: 376px;
+=======
+top: 246px;
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 background: #D3D3D3;
 
 `;
@@ -310,7 +516,11 @@ position: absolute;
 width: 80px;
 height: 80px;
 right: 0px;
+<<<<<<< HEAD
 top: 406px;
+=======
+top: 306px;
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 background: #eee;
 
 `;

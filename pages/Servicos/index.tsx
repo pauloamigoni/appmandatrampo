@@ -1,9 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
+<<<<<<< HEAD
 import logo from '../../assets/manda.png';
 import logoImg from '../../assets/logoMT.png';
 
+=======
+import logoImg from '../../assets/manda.png';
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 import api from '../../services/api';
 import {
     Container,
@@ -21,7 +25,10 @@ import {
     ServiceName,
     ServiceMeta,
     ServiceMetaText,
+<<<<<<< HEAD
     ImageHome,
+=======
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 } from './styles';
 
 export interface Service {
@@ -35,10 +42,15 @@ export interface Service {
 }
 
 const Dashboard: React.FC = () => {
+<<<<<<< HEAD
 
 
     const [services, setServices] = useState<Service[]>([]);
   //  const { navigate } = useNavigation();
+=======
+    const [services, setServices] = useState<Service[]>([]);
+    const { navigate } = useNavigation();
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
 
     useEffect(() => {
         api.get('services').then((response) => {
@@ -46,6 +58,7 @@ const Dashboard: React.FC = () => {
         });
     }, []);
 
+<<<<<<< HEAD
     // const navigateToProfile = useCallback(() => {
     //     navigate('Profile');
     // }, [navigate]);
@@ -97,6 +110,28 @@ const Dashboard: React.FC = () => {
                     </ServiceContainer>
                 )}
             />
+=======
+    const navigateToProfile = useCallback(() => {
+        navigate('Profile');
+    }, [navigate]);
+    return (
+        <Container>
+            <Header>
+                <HeaderTitle>
+                    Bem Vindo ao {'\n'}
+                    <UserName>MANDATRAMPO </UserName>
+                    <Icon name="heart" size={18} color="#6C63FF" />
+                </HeaderTitle>
+                <ProfileButton onPress={navigateToProfile}>
+                    <UserAvatar source={logoImg} />
+                </ProfileButton>
+            </Header>
+            <ServiceBannerText>
+                Busque currículos e serviços manda um trampo pra alguém que
+                precisa .
+            </ServiceBannerText>
+            <UserAvatar source={logoImg} />
+>>>>>>> e7de18ba518801d66d227c8c6c0d3dc974d93e6e
         </Container>
     );
 };
